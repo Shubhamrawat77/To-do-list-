@@ -1,0 +1,111 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(135deg, rgb(58, 20, 119), rgb(32, 21, 49));
+}
+
+.container{
+    width: 70%;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: aliceblue;
+    border-radius: 15px;
+   
+}
+
+.heading{
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading h1{
+    margin-right: 40px;
+}
+
+.heading img{
+    width: 50px;
+    border-radius: 20px;
+}
+
+.feild{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(209, 209, 191);
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+
+}
+
+.feild input{
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 16px;
+    font-weight: 20px;
+    
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 16px 40px;
+    border-radius: 30px;
+    background-color: rgb(233, 72, 14);
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.list-items li{
+    list-style: none;
+    margin: 5px 25px;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 17px;
+    user-select: none;
+    position: relative;
+    
+    
+}
+
+.list-items li::before{
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: rgb(209, 209, 191);
+    left: -8px;
+    bottom: 16px;
+    border: 1px solid rgb(44, 43, 43);
+    background-size: cover;
+    
+
+}
+
+.list-items li i{
+    position: absolute;
+    right: 15px;
+    font-size: 20px;
+  
+   
+}
+
+.list-items li i:hover{
+    color: red;
+}
+
+.checked{
+    text-decoration: line-through;
+    color: rgb(57, 61, 61);
+}
+
+.checked::before{
+    background-image: url("check.png");
+}
+
